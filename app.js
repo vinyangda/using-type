@@ -14,13 +14,15 @@
 // const result2 = add(number1, number3);
 // console.log(result2);
 function add(n1, n2, showResult, phrase) {
+    var result = n1 + n2;
     if (showResult) {
-        console.log(phrase + n1 + n2);
+        console.log(phrase + result);
     }
     else {
-        return n1 + n2;
+        return result;
     }
 }
+// 숫자에 문자열이 포함되어 더해지기 때문에 다시"Result is: 52.8"이라는 수로 보여진다
 var number1 = 5;
 var number2 = 2.8;
 var printResult = true;
